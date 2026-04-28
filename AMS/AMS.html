@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Attendance Management System</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+        background: #f4f6f8;
+        color: #1f2933;
+    }
+
+    /* Navbar */
+    nav {
+        background: #1e293b;
+        padding: 15px 50px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        padding: 8px 14px;
+        border-radius: 6px;
+        transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+        background: #38bdf8;
+        color: #0f172a;
+    }
+
+    /* Main container */
+    .main {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* About Section */
+    .about {
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #38bdf8, #4ade80);
+        color: #0f172a;
+    }
+
+    .about h1 {
+        font-size: 44px;
+        margin-bottom: 15px;
+    }
+
+    .about p {
+        font-size: 17px;
+        max-width: 850px;
+        margin: auto;
+        line-height: 1.6;
+    }
+
+    /* Modules Section */
+    .modules {
+        padding: 60px 40px;
+    }
+
+    .modules h2 {
+        font-size: 32px;
+        margin-bottom: 35px;
+        color: #1e293b;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 30px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .card {
+        background: white;
+        border-radius: 14px;
+        padding: 30px 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+        color: #2563eb;
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 15px;
+        color: #475569;
+    }
+
+    /* Footer */
+    footer {
+        background: #0f172a;
+        color: #e5e7eb;
+        padding: 15px;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="SM.html">Student Module</a></li>
+        <li><a href="FM.html">Faculty Module</a></li>
+        <li><a href="SubM.html">Subject Module</a></li>
+        <li><a href="Attendence.html">Attendance</a></li>
+        <li><a href="cnt.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="main">
+
+    <!-- About Section -->
+    <section class="about">
+        <h1>Attendance Management System</h1>
+        <p>
+            The Attendance Management System helps institutions efficiently record,
+            manage, and monitor student attendance through a centralized and
+            user-friendly digital platform.
+        </p>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="modules">
+        <h2>System Modules</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Student Details</h3>
+                <p>Create, update, and manage student profiles securely.</p>
+            </div>
+
+            <div class="card">
+                <h3>Faculty Details</h3>
+                <p>Maintain faculty information and role assignments.</p>
+            </div>
+
+            <div class="card">
+                <h3>Subject Details</h3>
+                <p>Allocate subjects to faculty and students easily.</p>
+            </div>
+
+            <div class="card">
+                <h3>Attendance</h3>
+                <p>Mark, update, and track daily attendance records.</p>
+            </div>
+
+            <div class="card">
+                <h3>Reports</h3>
+                <p>Generate attendance summaries and percentage reports.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Attendance Management System
+    </footer>
+
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>

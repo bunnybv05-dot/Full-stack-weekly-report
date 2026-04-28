@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#eef2ff;
+        }
+        .contact{
+            width:400px;
+            margin:80px auto;
+            background:white;
+            padding:20px;
+            border-radius:8px;
+        }
+        input, textarea, button{
+            width:100%;
+            padding:10px;
+            margin-top:10px;
+        }
+        button{
+            background:#16a34a;
+            color:white;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <button>Send</button>
+</div>
+<script >
+    function sendMessage() {
+    let name = document.querySelector("input[type='text']").value;
+    let email = document.querySelector("input[type='email']").value;
+    let message = document.querySelector("textarea").value;
+
+    if (!name || !email || !message) {
+        alert("Please fill all fields");
+        return;
+    }
+
+    alert("Message sent successfully");
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2ff;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        select {
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Attendance</h2>
+
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Attendance</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Ravi</td>
+            <td>
+                <select>
+                    <option value="">Select</option>
+                    <option>Present</option>
+                    <option>Absent</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Sita</td>
+            <td>
+                <select>
+                    <option value="">Select</option>
+                    <option>Present</option>
+                    <option>Absent</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Arjun</td>
+            <td>
+                <select>
+                    <option value="">Select</option>
+                    <option>Present</option>
+                    <option>Absent</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <button>Submit Attendance</button>
+</div>
+<script src="att.js"></script>
+
+
+</body>
+</html>
